@@ -1,0 +1,109 @@
+generated: '2026-09-05'
+method: probed
+source: live GET of the named /.well-known/ path list on every host this record knows, each with a
+  browser User-Agent and a per-host random negative-control path
+hit_count: 0
+note: 'Zero discovery documents are served. On www.4dbim.ren and the 4dbim.ren apex forwarder every
+  named path returns a real nginx HTTP 404 and so does the negative-control path, so these are true
+  absences rather than a path-echoing or SPA catch-all. www.4dbim.cn is a blanket-deny host: it answers
+  HTTP 403 with an empty body on every path INCLUDING the negative control, and answers
+  /.well-known/security.txt with HTTP 200 carrying a 21-byte Chinese WAF denial page ("不允许访问！") —
+  a status-200 refusal, NOT a security.txt document, and it is recorded here as a miss. No WellKnown
+  and no SecurityTxt pointer is emitted: this file documents an absence, not a served surface.'
+hosts:
+- host: http://www.4dbim.ren
+  path_echo_control: passed
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /.well-known/aauth-resource.json
+    status: 404
+  - path: /.well-known/apis.json
+    status: 404
+  - path: /apis.json
+    status: 404
+  - path: /apis.yml
+    status: 404
+  - path: /.well-known/4dbim-negative-control-9c41ea27.json
+    status: 404
+    control: true
+- host: http://4dbim.ren
+  path_echo_control: passed
+  note: Aliyun URL-forwarding apex; every path 302s to the same path on www.4dbim.ren, which 404s.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /.well-known/aauth-resource.json
+    status: 404
+  - path: /.well-known/apis.json
+    status: 404
+  - path: /apis.json
+    status: 404
+  - path: /apis.yml
+    status: 404
+  - path: /.well-known/4dbim-negative-control-9c41ea27.json
+    status: 404
+    control: true
+- host: http://www.4dbim.cn
+  path_echo_control: failed
+  note: 'Blanket-deny host. The negative control also returns 403, so a 403 here carries no information
+    about whether a path exists. The lone 200 is a 21-byte WAF denial body, not a document.'
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    document: false
+    note: 21-byte body "不允许访问！" (access not allowed), Content-Type text/html — a WAF refusal served
+      with a 200, treated as a miss.
+  - path: /.well-known/openid-configuration
+    status: 403
+  - path: /.well-known/oauth-authorization-server
+    status: 403
+  - path: /.well-known/oauth-protected-resource
+    status: 403
+  - path: /.well-known/api-catalog
+    status: 403
+  - path: /.well-known/ai-plugin.json
+    status: 403
+  - path: /.well-known/agent-card.json
+    status: 403
+  - path: /.well-known/agent.json
+    status: 403
+  - path: /.well-known/aauth-resource.json
+    status: 403
+  - path: /.well-known/apis.json
+    status: 403
+  - path: /apis.json
+    status: 403
+  - path: /apis.yml
+    status: 403
+  - path: /.well-known/4dbim-negative-control-9c41ea27.json
+    status: 403
+    control: true

@@ -1,0 +1,13 @@
+generated: '2026-09-05'
+method: searched
+source: http://www.4dbim.ren/zh (full site walk 2026-09-05) plus STEP 0b contract discovery against
+  www.4dbim.ren, 4dbim.ren and www.4dbim.cn
+limit_count: 0
+headers: []
+status_on_exhaustion: null
+note: '4DBIM documents no rate limits because it documents no API. The 4DBIM Cloud product page
+  markets an "API开放平台" (API open platform) as a capability, but no reference, specification,
+  quota table or response-header contract accompanies it, and no API host resolves under 4dbim.ren.
+  There is therefore no runtime signal for an agent to read. No RateLimits pointer is emitted —
+  this file records an absence, not a published limit.'
+limits: []

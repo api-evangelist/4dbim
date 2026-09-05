@@ -1,0 +1,84 @@
+# 4DBIM (Beijing Yunjianxin Technology Co., Ltd. / 北京云建信科技有限公司)
+
+> generated: 2026-09-05
+> method: generated
+> source: apis.yml plus live fetches of http://www.4dbim.ren/ (2026-09-05). 4DBIM does not
+> publish an /llms.txt of its own; this file is written by API Evangelist and is not a
+> provider-published document.
+
+4DBIM is a Beijing construction-technology company founded in 2015 that commercializes
+Tsinghua University 4D-BIM and BIM-FM research as a full-lifecycle Building Information
+Modeling platform for infrastructure engineering — municipal construction and "national
+lifeline" projects such as metro, bridge, highway, tunnel and utility-corridor works.
+
+## What is important for an agent to know
+
+- **There is no public API.** As of 2026-09-05, 4DBIM publishes no developer portal, no API
+  reference, no SDK, no webhook catalog and no machine-readable contract (OpenAPI, AsyncAPI,
+  GraphQL SDL, Protobuf, WSDL or Postman collection). Every discovery path probed on
+  www.4dbim.ren, the 4dbim.ren apex and www.4dbim.cn returned 404 or 403 — see
+  `well-known/4dbim-well-known.yml`.
+- **The API is marketed but not documented.** The 4DBIM Cloud product page lists
+  "API开放平台" (API open platform) as a platform capability alongside the BIM+GIS data engine
+  and IoT ingestion. No link, reference or specification accompanies the claim. Access appears
+  to run through a commercial engagement.
+- **No API host exists.** api / cloud / docs / dev / developer / open / openapi / platform /
+  app / login and 12 further conventional subdomains of 4dbim.ren do not resolve.
+- **The site is HTTP-only.** TCP 443 on www.4dbim.ren is refused; there is no TLS, no HSTS,
+  no SPF, no DMARC, no CAA and no DNSSEC on 4dbim.ren. Do not send credentials to this host.
+
+## Products
+
+- **4DBIM Cloud (4DCloud)** — http://www.4dbim.ren/zh/products/cloud — cloud, microservice
+  "engineering lifecycle data centre"; lightweight BIM+GIS graphics engine, multi-source model
+  fusion (Revit, oblique photogrammetry), IoT ingestion, cross-platform/multi-terminal access.
+- **Power4D** — http://www.4dbim.ren/zh/products/power4d — construction-stage management:
+  schedule, quality, safety, cost, materials and plant, tied to the model.
+- **Wonder4D** — http://www.4dbim.ren/zh/products/wonder4d — operations and maintenance:
+  equipment lifecycle, energy monitoring, space management, security monitoring.
+- **Skill4D** — http://www.4dbim.ren/zh/products/skill4d — 3D visual work instructions for
+  construction sequences, technical briefing and worker training; mobile viewing.
+- **Smart4D** — http://www.4dbim.ren/zh/products/smart4d — smart precast beam-yard management
+  from casting to erection, with IoT capture and production scheduling.
+- **BIM consulting** — http://www.4dbim.ren/zh/consulting — maturity assessment, enterprise
+  build-out, resource survey, solution authoring, pilot design, outcome operations.
+
+## Pages
+
+- Home: http://www.4dbim.ren/zh
+- About: http://www.4dbim.ren/zh/about
+- Products index: http://www.4dbim.ren/zh/products
+- Project cases: http://www.4dbim.ren/zh/cases
+- News: http://www.4dbim.ren/zh/news (most recent item dated 2020-09-22)
+- Careers: http://www.4dbim.ren/zh/about/careers
+- Contact: http://www.4dbim.ren/zh/about/contact
+- English: http://www.4dbim.ren/en
+
+## Contact
+
+- Business: market@4dbim.ren (the footer also prints market@4dbim.cn, but 4dbim.cn publishes
+  no MX record)
+- Switchboard: +86 10 88415500 / +86 10 86465500
+- Head office: 3205 Baiwang Hongxiang, Tangjialing, Haidian District, Beijing, China
+- ICP filing: 京ICP备16021145号-1
+
+## Company
+
+- Founded 2015; founder and chairman Zhang Jianping (张建平), Tsinghua University Department
+  of Civil Engineering.
+- Roughly USD 13.7M raised through Series B; investors named publicly include Poly Capital,
+  Hillhouse, Country Garden Venture Capital and Sfund.
+- Reported enterprise partners: China Railway No. 4 Engineering Group, China Academy of
+  Railway Sciences, Chengdu Architectural Design and Research Institute; reseller network
+  cited as reaching 1,000+ projects across 100+ cities.
+- Reference projects: New Shougang Bridge (Beijing Urban Construction Group), Guangzhou Metro
+  Lines 18/22 (China Railway Construction South China), Taiyuan East Second Ring Expressway,
+  Shenzhen-Zhongshan Link smart beam yard (China Railway Major Bridge Engineering Group).
+
+## API Evangelist artifacts in this repository
+
+- apis.yml — the APIs.json profile
+- security/4dbim-domain-security.yml — TLS/DNS/mail posture (probed)
+- well-known/4dbim-well-known.yml — discovery-path probe record (all misses)
+- plans/4dbim-plans-pricing.yml — no published pricing (plan_count 0)
+- rate-limits/4dbim-rate-limits.yml — no published limits (limit_count 0)

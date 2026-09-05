@@ -1,0 +1,16 @@
+generated: '2026-09-05'
+method: searched
+source: http://www.4dbim.ren/zh (full site walk 2026-09-05 — home, products index, all five product
+  pages, consulting, cases, news, about, careers, contact; no pricing page exists in the navigation
+  or anywhere in the served HTML)
+plan_count: 0
+currency: null
+model: enterprise-contact-sales
+note: '4DBIM publishes no pricing of any kind. There is no /pricing page, no plan comparison, no
+  trial and no self-serve sign-up anywhere on www.4dbim.ren; the site has no login or account
+  surface at all. Every product page ends in a "详情" (details) link back into the marketing copy,
+  and the only commercial route offered is the business-cooperation address market@4dbim.ren and
+  the switchboard on the contact page. The company sells enterprise BIM platform deployments and
+  BIM consulting engagements through a direct sales and reseller motion, so price is quoted per
+  project. No Pricing pointer is emitted because no pricing page is served.'
+plans: []

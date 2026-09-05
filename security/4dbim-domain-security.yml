@@ -1,0 +1,60 @@
+generated: '2026-09-05'
+method: probed
+source: live DNS/TCP/TLS/HTTP probes of every host this record knows (www.4dbim.ren, 4dbim.ren, and
+  www.4dbim.cn, the domain used by the footer contact address). No OpenAPI servers[] host exists —
+  4DBIM publishes no machine-readable contract.
+note: 'The primary web property is HTTP-only. TCP 443 on www.4dbim.ren is refused (connection refused,
+  not a timeout or a filtered drop), so there is no TLS to negotiate and no certificate to inspect; the
+  site is served over cleartext HTTP by nginx behind an Aliyun edge. 4dbim.ren also publishes no SPF,
+  no DMARC, no CAA and no DNSSEC. This is a domain-hygiene finding about the corporate web/mail
+  surface, not about an API — 4DBIM exposes no public API host.'
+hosts:
+- host: www.4dbim.ren
+  https: false
+  http: true
+  https_port_state: refused
+  tls_version: null
+  cert_expires: null
+  hsts: false
+  server: nginx
+  note: 'HTTP 200 at http://www.4dbim.ren/ which 302s to /zh. Port 443 refused: `nc -z www.4dbim.ren 443`
+    fails and openssl s_client reports errno 61 (connection refused).'
+- host: 4dbim.ren
+  https: false
+  http: true
+  https_port_state: refused
+  tls_version: null
+  cert_expires: null
+  hsts: false
+  server: Tengine (Aliyun URL Forwarding Server)
+  note: Apex is an Aliyun URL-forwarding host that 302s every path to the matching path on www.4dbim.ren.
+- host: www.4dbim.cn
+  https: false
+  http: true
+  https_port_state: refused
+  tls_version: null
+  cert_expires: null
+  hsts: false
+  note: 'Secondary domain carried in the site footer contact address (market@4dbim.cn). It answers HTTP
+    404 at the root with an empty body and 403 with an empty body on every other path probed, including
+    a random negative-control path — a blanket-deny host, not a document server. It publishes no MX
+    record, so the footer address appears undeliverable; the contact page itself gives market@4dbim.ren.'
+domains:
+- domain: 4dbim.ren
+  registrar_dns: Alibaba Cloud (dns29/dns30.hichina.com)
+  dnssec: false
+  caa: []
+  spf: false
+  dmarc: false
+  dmarc_policy: null
+  mx:
+  - mxn.mxhichina.com
+  - mxw.mxhichina.com
+- domain: 4dbim.cn
+  registrar_dns: nowcndns.com (ns1/ns2)
+  dnssec: false
+  caa: []
+  spf: false
+  dmarc: false
+  dmarc_policy: null
+  mx: []

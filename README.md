@@ -64,5 +64,16 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-4DBIM is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://equityzen.com/company/4dbim
+4DBIM is the product brand of Beijing Yunjianxin Technology Co., Ltd. (北京云建信科技有限公司), a Beijing construction-technology company founded in 2015 that commercializes Tsinghua University 4D-BIM and BIM-FM research as a full-lifecycle Building Information Modeling platform for infrastructure. Its 4DBIM Cloud data centre combines a lightweight BIM+GIS graphics engine, multi-source model fusion and IoT ingestion on a microservice architecture, packaged as Power4D (construction management), Wonder4D (operations and maintenance), Skill4D (3D work instructions) and Smart4D (smart precast beam yards), plus a BIM consulting practice. It targets municipal and "national lifeline" infrastructure — metro, bridge, highway, tunnel and utility corridors — and has raised about USD 13.7M through a Series B. The 4DBIM Cloud page markets an "API开放平台" (API open platform), but 4DBIM publishes no developer portal, API reference or machine-readable contract, and www.4dbim.ren is an HTTP-only marketing site.
+
+- Website: http://www.4dbim.ren/zh
+- Contact: http://www.4dbim.ren/zh/about/contact
+- News: http://www.4dbim.ren/zh/news
+- Secondary-market listing this profile was harvested from: https://equityzen.com/company/4dbim
+
+**No public API surface.** A full contract-discovery pass on 2026-09-05 probed every host this record
+knows (www.4dbim.ren, the 4dbim.ren apex forwarder, and www.4dbim.cn) for OpenAPI/Swagger at the host
+root, GraphQL, MCP, OGC, an A2A agent card, `llms.txt`, `apis.json` and the named `/.well-known/` path
+list, and resolved twenty-two conventional API/docs subdomains. Nothing was found. The 4DBIM Cloud
+product page markets an “API开放平台” (API open platform) as a capability, but publishes no reference
+and no specification; business contact is the only documented route to it.

@@ -66,14 +66,91 @@
 
 4DBIM is the product brand of Beijing Yunjianxin Technology Co., Ltd. (北京云建信科技有限公司), a Beijing construction-technology company founded in 2015 that commercializes Tsinghua University 4D-BIM and BIM-FM research as a full-lifecycle Building Information Modeling platform for infrastructure. Its 4DBIM Cloud data centre combines a lightweight BIM+GIS graphics engine, multi-source model fusion and IoT ingestion on a microservice architecture, packaged as Power4D (construction management), Wonder4D (operations and maintenance), Skill4D (3D work instructions) and Smart4D (smart precast beam yards), plus a BIM consulting practice. It targets municipal and "national lifeline" infrastructure — metro, bridge, highway, tunnel and utility corridors — and has raised about USD 13.7M through a Series B. The 4DBIM Cloud page markets an "API开放平台" (API open platform), but 4DBIM publishes no developer portal, API reference or machine-readable contract, and www.4dbim.ren is an HTTP-only marketing site.
 
-- Website: http://www.4dbim.ren/zh
-- Contact: http://www.4dbim.ren/zh/about/contact
-- News: http://www.4dbim.ren/zh/news
-- Secondary-market listing this profile was harvested from: https://equityzen.com/company/4dbim
+**Areas:** Company · Construction · Construction Technology · Building Information Modeling · BIM · Digital Twin · Infrastructure · Engineering · IoT · Software-as-a-Service · China
 
-**No public API surface.** A full contract-discovery pass on 2026-09-05 probed every host this record
-knows (www.4dbim.ren, the 4dbim.ren apex forwarder, and www.4dbim.cn) for OpenAPI/Swagger at the host
-root, GraphQL, MCP, OGC, an A2A agent card, `llms.txt`, `apis.json` and the named `/.well-known/` path
-list, and resolved twenty-two conventional API/docs subdomains. Nothing was found. The 4DBIM Cloud
-product page markets an “API开放平台” (API open platform) as a capability, but publishes no reference
-and no specification; business contact is the only documented route to it.
+## 4DBIM on APIs.io
+
+Everything profiled for 4DBIM is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/4dbim/](https://apis.io/providers/4dbim/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [4Dbim Domain Security](https://apis.io/security/4dbim/4dbim-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [4Dbim Plans Pricing](https://apis.io/plans/4dbim/4dbim-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [4Dbim Rate Limits](https://apis.io/rate-limits/4dbim/4dbim-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](http://www.4dbim.ren/zh)
+- [Support](http://www.4dbim.ren/zh/about/contact)
+- [Blog](http://www.4dbim.ren/zh/news)
+
+## API Evangelist rating
+
+**Kin Score 5.4** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 6.0 |
+| Access clarity | 0.0 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.9** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/4dbim/](https://apis.io/providers/4dbim/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for 4DBIM: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/4dbim/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
